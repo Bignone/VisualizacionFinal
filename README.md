@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 
 ## Objetivo del proyecto
-Este proyecto surge como práctica final de la asignatura de Análisis de datos avanzada, recreando un pequeño ejemplo de arquitectura de visualización de datos, comprendiendo una conexión a una base de datos no distribuida, un pequeño servidor de consulta a la base de datos y servicio de los mismos, y una visualización mediante una App de Angular.
+Este proyecto surge como práctica final de la asignatura de Análisis de Datos Avanzada, recreando un pequeño ejemplo de arquitectura de visualización de datos, comprendiendo una conexión a una base de datos no relacional, un pequeño servidor de consulta a la base de datos y servicio de los mismos, y una visualización mediante una App de Angular.
 
 
 ## Requerimientos
@@ -68,3 +68,6 @@ Ejecutar `ng test` para ejecutar los test unitarios via [Karma](https://karma-ru
 
 Ejecutar `ng e2e` para ejecutar los test end-to-end via [Protractor](http://www.protractortest.org/).
 
+## Otra información
+Autor: Eduardo Bustos Miranda
+Fecha: 02/05/2018
