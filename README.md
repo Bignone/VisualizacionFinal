@@ -1,4 +1,4 @@
-# DataViz3
+# Visualización avanzada: Visualización de datos sobre X
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
