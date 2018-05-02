@@ -11,9 +11,9 @@ Este proyecto surge como práctica final de la asignatura de Análisis de Datos 
 
 La aplicación desarrollada en Angular se compone de un servidor que toma los datos de una base de datos mongodb y de un consumidor que muestra los datos por el navegador.
 Para su funcionamiento se requieren los siguientes componentes:
-1. MongoDB (https://www.mongodb.com/)
-2. Node (https://nodejs.org/es/)
-3. Jupyter Notebook (opcional, sólo para ver la transformación de datos), (https://anaconda.org/anaconda/anaconda-navigator)
+1. [MongoDB](https://www.mongodb.com/)
+2. [Node](https://nodejs.org/es/)
+3. [Jupyter Notebook](https://anaconda.org/anaconda/anaconda-navigator) (opcional, sólo para ver la transformación de datos), 
 
 
 ## Base de datos mongoDB
