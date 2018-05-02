@@ -9,15 +9,13 @@ app.use(cors())
 
 app.get('/data', (req, res) => {
 
-  var data = [];
-
   // Get the data from mongoDB
   MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("terrorismDB");
     var d = new Date();
     var query = {  };
-    
+    const data = [];
 
     dbo.collection("data").aggregate([{$group:{ _id : "$imonth", count:{$sum:1}}}]).toArray(function(err, result) {  //.find(query).toArray(function(err, result) {
       
@@ -30,10 +28,13 @@ app.get('/data', (req, res) => {
           data.push([`Mes ${mes}`, numAttacks]);
         }
         db.close();
+        res.send(data)
+        
     });
+
   });
 
-  res.send(data)
+  
 
 })
 

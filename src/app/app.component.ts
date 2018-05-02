@@ -10,16 +10,16 @@ import { ApiServiceService } from './api-service.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Edu\'s magic box';
+  title = 'Ataques terroristas por mes en el año 2015';
   private chartData;
 
   constructor(private _ApiService: ApiServiceService) { }
 
   generateData() {
     this.chartData = [];
-    for (let i = 0; i < (8 + Math.floor(Math.random() * 10)); i++) {
+    for (let i = 0; i < 13; i++) {
       this.chartData.push([
-        `Index ${i}`,
+        `Mes ${i}`,
         Math.floor(Math.random() * 100)
       ]);
     }
