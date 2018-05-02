@@ -69,6 +69,6 @@ Ejecutar `ng test` para ejecutar los test unitarios via [Karma](https://karma-ru
 Ejecutar `ng e2e` para ejecutar los test end-to-end via [Protractor](http://www.protractortest.org/).
 
 ## Otra información
-Autor: Eduardo Bustos Miranda
+Autor: Eduardo Bustos Miranda (https://github.com/Bignone)
 
 Fecha: 02/05/2018
