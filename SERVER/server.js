@@ -16,7 +16,7 @@ app.get('/data', (req, res) => {
 
 })
 
-app.get('/*', (req, res) => res.send('Hello World!'))
+app.get('/*', (req, res) => res.send('To get de data go to /data'))
 
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(3000, () => console.log('App listening on port 3000!'))

@@ -4,12 +4,25 @@ var url = "mongodb://localhost:27017/";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
-  var dbo = db.db("test-database");
+  var dbo = db.db("terrorismDB");
   var d = new Date();
-  var query = { date: { $lte: d} };
-  dbo.collection("posts").find(query).toArray(function(err, result) {
+  var query = {  };
+  var data = [];
+  dbo.collection("data").aggregate([{$group:{ _id : "$imonth", count:{$sum:1}}}]).toArray(function(err, result) {  //.find(query).toArray(function(err, result) {
     if (err) throw err;
-    console.log(result);
-    db.close();
+    
+      for (let i = 0; i < result.length; i++) {
+        
+        var mes = result[i]._id
+        var numAttacks = result[i].count
+        
+        data.push([
+          `Mes ${mes}`,
+          numAttacks
+        ]);
+      }
+    
+      console.log(data);
+      db.close();
   });
 });
