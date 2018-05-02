@@ -2,8 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
+
 ## Objetivo del proyecto
 Este proyecto surge como práctica final de la asignatura de Análisis de datos avanzada, recreando un pequeño ejemplo de arquitectura de visualización de datos, comprendiendo una conexión a una base de datos no distribuida, un pequeño servidor de consulta a la base de datos y servicio de los mismos, y una visualización mediante una App de Angular.
+
 
 ## Requerimientos
 
@@ -12,6 +14,7 @@ Para su funcionamiento se requieren los siguientes componentes:
 1. MongoDB (https://www.mongodb.com/)
 2. Node (https://nodejs.org/es/)
 3. Jupyter Notebook (opcional, sólo para ver la transformación de datos), (https://anaconda.org/anaconda/anaconda-navigator)
+
 
 ## Base de datos mongoDB
 
@@ -28,6 +31,7 @@ mongoimport --db terrorismDB --collection data --file terrorismDB.json
 ```
 Es importante que los nombres sean los especificados por la configuración de lectura del servidor.
 
+
 ## Servidor de datos
 
 Dentro de la carpeta .../VisualizacionFinal/SERVER existen dos versiones del servidor:
@@ -43,7 +47,8 @@ node server.js
 ```
 Una vez levantado el servidor, podemos observar los datos resultados en http://localhost:3000/data
 
-##Visualización de los datos
+
+## Visualización de los datos
 
 Para la visualización de los datos se ha desarrollado una aplicación en Angular.
 Para levantar el servicio utilizar:
@@ -51,12 +56,13 @@ Para levantar el servicio utilizar:
 cd .../VisualizacionFinal/
 npm start
 ```
-La visualización se podrá observar en http://localhost:4200/
+La visualización se podrá observar en http://localhost:4200/ junto con una breve reflexión sobre los datos.
 
 
 ## Tests unitarios
 
 Ejecutar `ng test` para ejecutar los test unitarios via [Karma](https://karma-runner.github.io).
+
 
 ## Tests end-to-end
 
