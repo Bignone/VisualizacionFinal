@@ -13,7 +13,6 @@ app.get('/data', (req, res) => {
   MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("terrorismDB");
-    var d = new Date();
     var query = {  };
     const data = [];
 

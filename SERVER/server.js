@@ -5,13 +5,8 @@ const app = express()
 app.use(cors())
 
 app.get('/data', (req, res) => {
-  const chartData = [];
-  for (let i = 0; i < (8 + Math.floor(Math.random() * 10)); i++) {
-    chartData.push([
-      `Index ${i}`,
-      Math.floor(Math.random() * 100)
-    ]);
-  }
+  // If not posible conect with mongo use de raw data
+  const chartData = [["Mes 1",2687],["Mes 2",2438],["Mes 3",2317],["Mes 4",2330],["Mes 5",2654],["Mes 6",2312],["Mes 7",2363],["Mes 8",2434],["Mes 9",2138],["Mes 10",2400],["Mes 11",2264],["Mes 12",2003]];
   res.send(chartData)
 
 })

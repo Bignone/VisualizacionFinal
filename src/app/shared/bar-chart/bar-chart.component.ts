@@ -55,7 +55,7 @@ export class BarChartComponent implements OnInit, OnChanges {
 
     // define X & Y domains
     const xDomain = this.data.map(d => d[0]);
-    const yDomain = [0, d3.max(this.data, d => d[1])];
+    const yDomain = [0, 3000] //d3.max(this.data, d => d[1])];
 
     // create scales
     this.xScale = d3.scaleBand().padding(0.1).domain(xDomain).rangeRound([0, this.width]);
