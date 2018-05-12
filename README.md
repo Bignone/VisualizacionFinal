@@ -72,4 +72,4 @@ Ejecutar `ng e2e` para ejecutar los test end-to-end via [Protractor](http://www.
 ## Otra información
 Autor: Eduardo Bustos Miranda (https://github.com/Bignone)
 
-Fecha: 02/05/2018
+Fecha: 12/05/2018
