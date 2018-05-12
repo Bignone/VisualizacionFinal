@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.site-header {
+    background-color: rgb(217, 226, 230);
+    border-bottom: 6px solid #000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
