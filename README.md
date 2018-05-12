@@ -18,7 +18,7 @@ Para su funcionamiento se requieren los siguientes componentes:
 
 ## Base de datos mongoDB
 
-Los datos originales se pueden encontrar en https://www.kaggle.com/START-UMD/gtd
+Los datos originales se pueden encontrar en https://www.kaggle.com/START-UMD/gtd.
 Levantar el servidor mongo en una consola de comandos con:
 ```
 mongod
